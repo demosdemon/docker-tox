@@ -1,6 +1,6 @@
-FROM themattrix/tox-base
+FROM demosdemon/tox-base
 
-MAINTAINER Matthew Tardiff <mattrix@gmail.com>
+MAINTAINER Brandon LeBlanc <brandon@leblanc.codes>
 
 ONBUILD COPY install-prereqs*.sh requirements*.txt tox.ini /app/
 ONBUILD ARG SKIP_TOX=false
