@@ -1,6 +1,7 @@
 FROM demosdemon/tox-base
 
-MAINTAINER Brandon LeBlanc <brandon@leblanc.codes>
+LABEL author="Matthew Tardiff <mattrix@gmail.com>"
+LABEL maintainer="Brandon LeBlanc <brandon@leblanc.codes>"
 
 ONBUILD COPY install-prereqs*.sh requirements*.txt tox.ini /app/
 ONBUILD ARG SKIP_TOX=false
